@@ -1,16 +1,5 @@
 # Number of Arithmetic Slices
 
-Define the problem/solution recursively (this is the most important step - if you don’t do this correctly, 
-you will automatically get a 0 for the problem regardless of the code you write).
-
-Briefly talk about how you plan to store solutions to sub-problems and combining them to solve the global problem 
-(talk about the data structure/variables you’ll use to solve the problem).
-
-IDEAL + Duke’s 7 steps
-
-Upload everything to Github. Use readme files (one per problem) to do steps 1 and 2.
-
-
 ### Recursive definition:
 		The recursive definition of the problem is comparing every 3 adjacent numbers in the input array.
 	This is the action that is repeated about n times, where 'n' is the length of the input array. Once we 
