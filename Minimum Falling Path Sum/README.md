@@ -14,11 +14,11 @@
 	into rows of values. The problem can then be broken down further into individual cells. I can use the 
 	cells of the array to represent a path leading up to that cell (starting from any cell in the first row). 
 	Each cell contains the minimal accumulation of the values in the path up to that cell. Each cell's value 
-	depends on the values in the row before that cell. That is the definition of the sub-problems and how 
-	they are stored individually. Now, what I'm looking for is a path from any cell in the first row, to any 
-	cell in the last row of the 2D array. Given this context, I can use my newly created 2D array of solutions 
-	to my sub-problems. I'll access the last row and find the minimum value of that row, which is the solution 
-	to the global problem.
+	depends on the values of the adjacent cells in the previous row. That is the definition of the 
+	sub-problems and how they are stored individually. Now, what I'm looking for is a path from any cell in 
+	the first row, to any cell in the last row of the 2D array. Given this context, I can use my newly created 
+	2D array of solutions to my sub-problems. I'll access the last row and find the minimum value of that row, 
+	which is the solution to the global problem.
 
 ### Problem solving process:
 		The problem asks to compare possible paths to find the minimum possible sum going from the top 
