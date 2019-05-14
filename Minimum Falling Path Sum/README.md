@@ -1,6 +1,6 @@
 # Minimum Falling Path Sum
 
-## Recursive definition:
+### Recursive definition:
 		The recursive definition of the problem is comparing the possible paths you could have taken to 
 	get to a given cell. To find the minimum possible path to a cell, I have to know what path I took to 
 	get there. That is the repeated step. If I want to make it to a specific cell, what possible step could 
@@ -9,7 +9,7 @@
 	I would compare the only three cells that can be ‘walked’ on before cell arr[2, 2]. Those three cells 
 	are my choices, which would be arr[1, 1], arr[1, 2], and arr[1, 3].
 
-## Defining and combining sub-problems:
+### Defining and combining sub-problems:
 		I decided to start by breaking down the problem into sub-problems by dividing it into rows 
 	of values. The problem can then be broken down further into cells whose values indicate the minimum sum 
 	of the possible paths that can be taken to arrive at any given cell. These numbers are stored in a 
@@ -17,7 +17,7 @@
 	‘n’ being the length of the input array. The time complexity of this solution would be O(n^2), ‘n’ being 
 	the length of the input array. 
 
-## Problem solving process:
+### Problem solving process:
 		The problem asks to compare possible paths to find the minimum possible sum going from the top 
 	of a square grid to its bottom. I’ll start with the first row, and make my way down to the bottom, making 
 	decisions of where to go based on previous decisions. I decided to try to solve the problem by breaking 
