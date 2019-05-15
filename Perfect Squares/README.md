@@ -1,17 +1,20 @@
-# Minimum Falling Path Sum
+# Perfect Squares
 
 ### Recursive definition:
-		The recursive definition of the problem is
-
+		The recursive definition of the problem is finding the minimum number of perfect squares that add up
+	to n - 1. If I want to find the minimum number of perfect squares that add up to 4, for example, I need
+	to find the solution to 3, then 2, then 1 and 0. I can use what I know starting from 0 and build up to n.
+	
 ### Defining and combining sub-problems:
-		I decided to start by breaking down the problem into sub-problems
+		I decided to start by breaking down the problem into sub-problems by every positive integer starting
+	from 0 up to 'n'. I used an array of size n + 1, where 'n' is the input value. The first value in the 
+	array is 0 and the rest is populated with 'math.inf' or the largest value available. I will edit the values 
+	in the array after 0. Cell i = 1 in the array will contain 1 because it takes only 1 perfect squares to 
+	add up to 1. Cell i = 2 in the array will contain 2 because it takes only 2 perfect squares to add up to 2.
 
 ### Problem solving process:
-		The problem asks to  
-	
-	a) To break the problem down to it’s very first step, I start with the very first row of my 2D array. 
-		The minimum path I can take to get to any of the cells on the first row is the same number, since I 
-		can’t take any steps down, in this case. Because of this, I can make the new array’s first row the 
-		same as the input array’s first row.
- 	b) Then, once I’ve solved the first row, I now have to decide how I get to each cell in the row after the 
-		first.
+		The problem asks to find the minimum number of perfect squares necessary to add up to 'n', any given
+	value. I began by first considering the simplest problem. If I input 0, it's obvious that no other positive 
+	integers add up to 0. If I input 1, my output would be 1 because 1 is a perfect square. This is true for all 
+	inputs that are perfect squares. 1, 4, 9, and every other perfect square only requires the sum of 1 number 
+	to add up to it (itself).
