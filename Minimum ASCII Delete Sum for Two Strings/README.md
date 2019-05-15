@@ -1,4 +1,4 @@
-# Minimum Falling Path Sum
+# Minimum ASCII Delete Sum for Two Strings
 
 ### Recursive definition:
 		The recursive definition of the problem is the repeated counting and deletion of letters in a string.
