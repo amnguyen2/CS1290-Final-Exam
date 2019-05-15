@@ -24,7 +24,8 @@
 	strings to make them the same. For example, the output for the difference between "a" and "ab" will be
 	98, because only "b" will be deleted. I will use a 2D array to store my ASCII values, the dimensions of
 	the array will be m*n, where 'm' is the length of the first string plus 1, and 'n' is the length of the
-	second string plus 1. 
+	second string plus 1. This solution's space and time complexity are O(m*n), where 'm' is the length of 
+	string one and 'n' is the length of string two.
 		In my steps to solve this problem, I decided to use an example input to help my process and 
 	explanation. I'm using the strings "delete" and "leet".
 	
