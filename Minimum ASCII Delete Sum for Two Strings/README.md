@@ -1,12 +1,12 @@
 # Minimum ASCII Delete Sum for Two Strings
 
 ### Recursive definition:
-		The recursive definition of the problem is the repeated counting and deletion of letters in a string.
-	For two non-empty strings, there are previous deletions of letters that should be considered. For example, 
-	to find the difference in deletions between "aa" and "a", we should first find the difference in deletions 
-	between "a" and "a". Before that, "" and "a". Before that, "" and "", two empty strings. The sum of the 
-	ASCII values of deleted letters starts at 0 and accumulates with every progression of the problem toward
-	a final solution.
+		The recursive definition of the problem is the repeated counting and deletion of letters in a string
+	using previously calculated answers to the solution of n - 1. For two non-empty strings, there are previous 
+	deletions of letters that should be considered. For example, to find the difference in deletions between "aa" 
+	and "a", we should first find the difference in deletions between "a" and "a". Before that, "" and "a". 
+	Before that, "" and "", two empty strings. The sum of the ASCII values of deleted letters starts at 0 and 
+	accumulates with every progression of the problem toward a final solution.
 	
 ### Defining and combining sub-problems:
 		I decided to start by breaking down the problem into sub-problems by the individual letters of the 
