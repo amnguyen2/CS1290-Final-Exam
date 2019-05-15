@@ -1,11 +1,11 @@
 # Number of Arithmetic Slices
 
 ### Recursive definition:
-		The recursive definition of the problem is comparing every 3 adjacent numbers in the input array.
-	This is the action that is repeated about n times, where 'n' is the length of the input array. Once we 
-	have compared the first 3 adjacent numbers, we move onto the next 3 adjacent numbers directly after 
-	that. The size of the problem decreases by 1 with every step (n-1). Every time we compare, we record 
-	the total number of arithmetic sequences found so far.
+		The recursive definition of the problem is comparing every 3 adjacent numbers in the input array
+	to find the solution to the problem n - 1. This is the action that is repeated about n times, where 'n' 
+	is the length of the input array. Once we have compared the first 3 adjacent numbers, we move onto the 
+	next 3 adjacent numbers directly after that. The size of the problem decreases by 1 with every step (n-1). 
+	Every time we compare, we record the total number of arithmetic sequences found so far.
 
 ### Defining and combining sub-problems:
 		My sub-problems are defined as every 3 adjacent numbers in my array. I traverse the entire array once,
