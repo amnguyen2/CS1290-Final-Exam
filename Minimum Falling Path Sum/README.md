@@ -7,7 +7,8 @@
 	I have taken before it (n-1)? This is the question that must be asked to come to the recursive definition 
 	of the problem. For example, if I want to know the minimum sum of the path to get to cell arr[2, 2], 
 	I would compare the only three cells that can be ‘walked’ on before cell arr[2, 2]. Those three cells 
-	are my choices, which would be arr[1, 1], arr[1, 2], and arr[1, 3].
+	are my choices, which would be arr[1, 1], arr[1, 2], and arr[1, 3]. Continuing this logic, I will end
+	up at my very first 'step', any cell in the first row.
 
 ### Defining and combining sub-problems:
 		I decided to start by breaking down the problem into sub-problems by dividing my input 2D array 
